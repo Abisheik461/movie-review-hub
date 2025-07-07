@@ -36,11 +36,13 @@ function App() {
           placeholder="Movie Title"
           value={form.title}
           onChange={(e) => setForm({ ...form, title: e.target.value })}
+          required
         />
         <textarea
           placeholder="Your Review"
           value={form.review}
           onChange={(e) => setForm({ ...form, review: e.target.value })}
+          required
         />
         <input
           type="number"
@@ -48,6 +50,7 @@ function App() {
           max="5"
           value={form.rating}
           onChange={(e) => setForm({ ...form, rating: e.target.value })}
+          required
         />
         <button type="submit">Submit</button>
       </form>
